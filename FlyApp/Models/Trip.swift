@@ -146,7 +146,6 @@ class Trip{
     //MARK: Eliminate duplicate venues methods.
     func findDuplicateVenues(){
         
-    
         for (i, venue1) in allVenues.enumerated(){
             for (j, venue2) in allVenues.enumerated(){
                 if((venue1.venueID == venue2.venueID)&&(j != i)){
@@ -180,14 +179,23 @@ class Trip{
         else{//Otherwise, remove a random venue.
             venueToRemove = arc4random_uniform(2) == 1 ? venue1 : venue2
         }
+        guard(venueLists[venueToRemove.parameter.name] != nil) else{
+            return
+        }
         
         for (i, venue) in allVenues.enumerated(){
             if(venue.venueID == venueToRemove.venueID)&&(venue.parameter.name == venueToRemove.parameter.name){
-                print("Removed venue called \(venue.name) from \(venue.parameter.name)")
+                print("1. Removed venue called \(venue.name) from \(venue.parameter.name)")
                 allVenues.remove(at: i)
             }
         }
+        for (i, venue) in venueLists[venueToRemove.parameter.name]!.venues.enumerated(){
+            if(venue.venueID == venueToRemove.venueID){
+                venueLists[venueToRemove.parameter.name]!.venues.remove(at: i)
+                print("2. Removed venue called \(venue.name) from \(venueToRemove.parameter.name) list.")
 
+            }
+        }
     }
 }
 extension Trip{
