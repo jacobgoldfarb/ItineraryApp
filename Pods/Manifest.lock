@@ -1,0 +1,27 @@
+PODS:
+  - BWWalkthrough (2.1.2)
+  - FoursquareAPIClient (4.0.1)
+  - GDPerformanceView-Swift (1.3.2)
+  - HGPlaceholders (0.3.0)
+  - SearchTextField (1.1.8)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - BWWalkthrough
+  - FoursquareAPIClient
+  - GDPerformanceView-Swift
+  - HGPlaceholders
+  - SearchTextField (~> 1.1.8)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  BWWalkthrough: 6b18dc688ff6b7168383fee07fe199ccaad7e9f7
+  FoursquareAPIClient: 12fbe6aa7b11485ee8314c7590458b6baa226f4e
+  GDPerformanceView-Swift: a74cd679587b199e4526492b6e68ce61593c6123
+  HGPlaceholders: 2df01c51b04a30acd0b8c9c7161c7cdde4541109
+  SearchTextField: 1d43b423c2acd3a9e2b37a74180e0cb137fcf1e7
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 30c4b5e11baf81b08f79c7c27987365cd9578614
+
+COCOAPODS: 1.4.0
